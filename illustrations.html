@@ -14,6 +14,30 @@
             font-weight: 300;
             letter-spacing: 0.5px;
         }
+        .illustration-grid > div {
+            opacity: 0;
+            transform: translateY(8px) scale(0.98);
+            animation: fadeUp 0.6s ease-out forwards;
+        }
+        .illustration-grid > div:nth-child(1) { animation-delay: 0.04s; }
+        .illustration-grid > div:nth-child(2) { animation-delay: 0.08s; }
+        .illustration-grid > div:nth-child(3) { animation-delay: 0.12s; }
+        .illustration-grid > div:nth-child(4) { animation-delay: 0.16s; }
+        .illustration-grid > div:nth-child(5) { animation-delay: 0.20s; }
+        .illustration-grid > div:nth-child(6) { animation-delay: 0.24s; }
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .illustration-grid > div {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -37,12 +61,15 @@
     <!-- Illustrations Grid -->
     <section class="pt-32 pb-24">
         <div class="max-w-3xl mx-auto px-4">
-            <div class="grid grid-cols-2 gap-1">
+            <div class="grid grid-cols-2 gap-1 illustration-grid">
                 <!-- Illustration items -->
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration1.png" target="_blank">
-                        <img src="images/illustration1.png" alt="Illustration 1" 
+                        <img src="images/thumbs/illustration1-400.png"
+                             srcset="images/thumbs/illustration1-400.png 400w, images/thumbs/illustration1-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 1" 
                              loading="lazy"
+                             decoding="async"
                              width="300"
                              height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
@@ -50,31 +77,61 @@
                 </div>
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration2.png" target="_blank">
-                        <img src="images/illustration2.png" alt="Illustration 2" 
+                        <img src="images/thumbs/illustration2-400.png"
+                             srcset="images/thumbs/illustration2-400.png 400w, images/thumbs/illustration2-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 2" 
+                             loading="lazy"
+                             decoding="async"
+                             width="300"
+                             height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration3.png" target="_blank">
-                        <img src="images/illustration3.png" alt="Illustration 3" 
+                        <img src="images/thumbs/illustration3-400.png"
+                             srcset="images/thumbs/illustration3-400.png 400w, images/thumbs/illustration3-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 3" 
+                             loading="lazy"
+                             decoding="async"
+                             width="300"
+                             height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration4.png" target="_blank">
-                        <img src="images/illustration4.png" alt="Illustration 4" 
+                        <img src="images/thumbs/illustration4-400.png"
+                             srcset="images/thumbs/illustration4-400.png 400w, images/thumbs/illustration4-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 4" 
+                             loading="lazy"
+                             decoding="async"
+                             width="300"
+                             height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration5.png" target="_blank">
-                        <img src="images/illustration5.png" alt="Illustration 5" 
+                        <img src="images/thumbs/illustration5-400.png"
+                             srcset="images/thumbs/illustration5-400.png 400w, images/thumbs/illustration5-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 5" 
+                             loading="lazy"
+                             decoding="async"
+                             width="300"
+                             height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
                 <div class="aspect-square overflow-hidden max-w-[300px]">
                     <a href="images/illustration6.png" target="_blank">
-                        <img src="images/illustration6.png" alt="Illustration 6" 
+                        <img src="images/thumbs/illustration6-400.png"
+                             srcset="images/thumbs/illustration6-400.png 400w, images/thumbs/illustration6-800.png 800w"
+                             sizes="(max-width: 640px) 50vw, 300px" alt="Illustration 6" 
+                             loading="lazy"
+                             decoding="async"
+                             width="300"
+                             height="300"
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
