@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Illustrations - Neslihan Wittek</title>
+    <title>About - Neslihan Wittek</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Add Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,25 +14,11 @@
             font-weight: 300;
             letter-spacing: 0.5px;
         }
-        .illustration-grid > div {
+        .image-reveal {
             opacity: 0;
             transform: translateY(8px) scale(0.98);
             animation: fadeUp 0.6s ease-out forwards;
         }
-        .illustration-grid > div:nth-child(1) { animation-delay: 0.04s; }
-        .illustration-grid > div:nth-child(2) { animation-delay: 0.08s; }
-        .illustration-grid > div:nth-child(3) { animation-delay: 0.12s; }
-        .illustration-grid > div:nth-child(4) { animation-delay: 0.16s; }
-        .illustration-grid > div:nth-child(5) { animation-delay: 0.20s; }
-        .illustration-grid > div:nth-child(6) { animation-delay: 0.24s; }
-        .illustration-grid > div:nth-child(7) { animation-delay: 0.28s; }
-        .illustration-grid > div:nth-child(8) { animation-delay: 0.32s; }
-        .illustration-grid > div:nth-child(9) { animation-delay: 0.36s; }
-        .illustration-grid > div:nth-child(10) { animation-delay: 0.40s; }
-        .illustration-grid > div:nth-child(11) { animation-delay: 0.44s; }
-        .illustration-grid > div:nth-child(12) { animation-delay: 0.48s; }
-        .illustration-grid > div:nth-child(13) { animation-delay: 0.52s; }
-        .illustration-grid > div:nth-child(14) { animation-delay: 0.56s; }
         @keyframes fadeUp {
             to {
                 opacity: 1;
@@ -41,7 +26,7 @@
             }
         }
         @media (prefers-reduced-motion: reduce) {
-            .illustration-grid > div {
+            .image-reveal {
                 animation: none;
                 opacity: 1;
                 transform: none;
@@ -58,9 +43,9 @@
                     <img src="images/neslihanwittek.png" alt="Neslihan Wittek" class="h-12 w-auto hover:scale-105 transition-transform duration-300">
                 </a>
                 <div class="flex items-center space-x-8 nav-links">
-                    <a href="about.html" class="text-gray-600 hover:text-black">About</a>
+                    <a href="index.html" class="text-gray-600 hover:text-black">About</a>
                     <a href="projects.html" class="text-gray-600 hover:text-black">Projects</a>
-                    <a href="index.html" class="text-gray-600 hover:text-black">Personal Illustrations</a>
+                    <a href="personalillustration.html" class="text-gray-600 hover:text-black">Personal Illustrations</a>
                     <a href="academic.html" class="text-gray-600 hover:text-black">Academic</a>
                     <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
                 </div>
@@ -68,179 +53,30 @@
         </div>
     </nav>
 
-    <!-- Illustrations Grid -->
-    <section class="pt-32 pb-24">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="grid grid-cols-2 gap-1 illustration-grid">
-                <!-- Illustration items -->
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration1.png" target="_blank">
-                        <img src="images/thumbs/illustration1-400.png"
-                             srcset="images/thumbs/illustration1-400.png 400w, images/thumbs/illustration1-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 1" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[1000px]">
-                    <a href="images/illustration2.png" target="_blank">
-                        <img src="images/thumbs/illustration2-400.png"
-                             srcset="images/thumbs/illustration2-400.png 400w, images/thumbs/illustration2-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 2" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration3.png" target="_blank">
-                        <img src="images/thumbs/illustration3-400.png"
-                             srcset="images/thumbs/illustration3-400.png 400w, images/thumbs/illustration3-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 3" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration4.png" target="_blank">
-                        <img src="images/thumbs/illustration4-400.png"
-                             srcset="images/thumbs/illustration4-400.png 400w, images/thumbs/illustration4-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 4" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration5.png" target="_blank">
-                        <img src="images/thumbs/illustration5-400.png"
-                             srcset="images/thumbs/illustration5-400.png 400w, images/thumbs/illustration5-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 5" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration6.png" target="_blank">
-                        <img src="images/thumbs/illustration6-400.png"
-                             srcset="images/thumbs/illustration6-400.png 400w, images/thumbs/illustration6-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 6" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration7.png" target="_blank">
-                        <img src="images/thumbs/illustration7-400.png"
-                             srcset="images/thumbs/illustration7-400.png 400w, images/thumbs/illustration7-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 7" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration8.png" target="_blank">
-                        <img src="images/thumbs/illustration8-400.png"
-                             srcset="images/thumbs/illustration8-400.png 400w, images/thumbs/illustration8-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 8" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration9.png" target="_blank">
-                        <img src="images/thumbs/illustration9-400.png"
-                             srcset="images/thumbs/illustration9-400.png 400w, images/thumbs/illustration9-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 9" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration10.png" target="_blank">
-                        <img src="images/thumbs/illustration10-400.png"
-                             srcset="images/thumbs/illustration10-400.png 400w, images/thumbs/illustration10-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 10" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration11.png" target="_blank">
-                        <img src="images/thumbs/illustration11-400.png"
-                             srcset="images/thumbs/illustration11-400.png 400w, images/thumbs/illustration11-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 11" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration12.png" target="_blank">
-                        <img src="images/thumbs/illustration12-400.png"
-                             srcset="images/thumbs/illustration12-400.png 400w, images/thumbs/illustration12-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 12" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration13.png" target="_blank">
-                        <img src="images/thumbs/illustration13-400.png"
-                             srcset="images/thumbs/illustration13-400.png 400w, images/thumbs/illustration13-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 13" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
-                <div class="aspect-square overflow-hidden max-w-[400px]">
-                    <a href="images/illustration14.png" target="_blank">
-                        <img src="images/thumbs/illustration14-400.png"
-                             srcset="images/thumbs/illustration14-400.png 400w, images/thumbs/illustration14-800.png 800w"
-                             sizes="(max-width: 640px) 50vw, 400px" alt="Illustration 14" 
-                             loading="lazy"
-                             decoding="async"
-                             width="400"
-                             height="400"
-                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
-                    </a>
-                </div>
+    <!-- About Section -->
+    <section class="pt-32 pb-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <!-- Added image container with smaller size -->
+            <div class="flex justify-center mb-0">
+                <img src="images/about_new.png" alt="Neslihan Wittek" decoding="async" class="w-[32rem] h-auto image-reveal hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="prose prose-lg text-gray-600 text-justify">
+                <p class="mb-4">
+                    Hello! I'm Neslihan Wittek, a researcher, an artist and storyteller from Gelsenkirchen, Germany. 
+                    I find joy in building Lego, exploring the world through watercoloring, and weaving 
+                    whimsical stories that bring my drawings to life. 
+                </p>
+                <p class="mb-4">
+                    My creative journey began alongside an academic one—while pursuing a PhD in biopsychology 
+                    and working with pigeons, I found peace painting with watercolors in quiet moments. My husband Kevin and my son Nils are my lovely companions on this journey. 🐧 🐤
+                </p>
+                <p class="mb-4">
+                    My color palette is often rooted in calm and natural tones, yet I'm not afraid to reach 
+                    for bold, unconventional hues when it helps bring an emotion to life.
+                </p>
+                <p>
+                    I'm open to collaborations and look forward to creating meaningful work together.
+                </p>
             </div>
         </div>
     </section>
