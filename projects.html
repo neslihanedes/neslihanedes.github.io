@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Neslihan Wittek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .nav-links {
+            font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        .image-reveal {
+            opacity: 0;
+            transform: translateY(8px) scale(0.98);
+            animation: fadeUp 0.6s ease-out forwards;
+        }
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .image-reveal {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col items-center py-6 space-y-2">
+                <a href="index.html">
+                    <img src="images/neslihanwittek.png" alt="Neslihan Wittek" class="h-12 w-auto">
+                </a>
+                <div class="flex items-center space-x-8 nav-links">
+                    <a href="about.html" class="text-gray-600 hover:text-black">About</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-black">Projects</a>
+                    <a href="index.html" class="text-gray-600 hover:text-black">Personal Illustrations</a>
+                    <a href="academic.html" class="text-gray-600 hover:text-black">Academic</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-black">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="pt-32 pb-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="max-w-5xl mx-auto space-y-8">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="relative">
+                        <img src="images/Project_1b.png" alt="Project_1b" decoding="async" class="w-full h-auto rounded-md">
+                        <div class="hidden md:block absolute right-3 bottom-12 w-[46%]">
+                            <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                                Illustrations from my first book, Bir Zamanlar Elbiseydim (Once I Was a Dress),
+                                written and illustrated by me and published in Türkiye by Meraklı Kaşifler
+                                Publishing. The book follows the changing life of a dress as it accompanies a
+                                family over the years.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="md:hidden text-gray-700 text-sm leading-relaxed mt-4">
+                        Illustrations from my first book, Bir Zamanlar Elbiseydim (Once I Was a Dress), written
+                        and illustrated by me and published in Türkiye by Meraklı Kaşifler Publishing. The book
+                        follows the changing life of a dress as it accompanies a family over the years.
+                    </p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                        <div>
+                            <img src="images/Project_2b.png" alt="Project_2b" decoding="async" class="w-full h-auto max-w-xs mx-auto rounded-md">
+                            <p class="text-gray-700 text-sm leading-relaxed mt-4">
+                                I designed an advent calendar for a private company in Berlin. Based on a provided
+                                story about a squirrel traveling through the forest to recover stolen gifts, I
+                                illustrated 24 story cards, 24 riddle cards, as well as matching stickers and a
+                                poster.
+                            </p>
+                        </div>
+                        <div class="md:mt-24">
+                            <img src="images/Project_3b.png" alt="Project_3b" decoding="async" class="w-full h-auto max-w-xs mx-auto rounded-md md:justify-self-center">
+                            <p class="text-gray-700 text-sm leading-relaxed mt-4">
+                                My character illustrations for the Big and Small Hearts Picture Book Illustration
+                                Competition, organized by Çocuk Kalp Vakfı in Turkey, were selected to be exhibited
+                                as part of the official exhibition.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/Project_4b.png" alt="Project_4b" decoding="async" class="w-full h-auto max-w-xs mx-auto rounded-md">
+                            <p class="text-gray-700 text-sm leading-relaxed mt-4">
+                                My illustration Lonely Mole Lu was featured in Maya Magazine, an online magazine
+                                focused on art, literature, and children’s books for adults.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-sm text-gray-500">
+        <p>&copy; 2026 Neslihan Wittek. All rights reserved.</p>
+    </footer>
+</body>
+</html>
